@@ -62,3 +62,25 @@ hr{
     color: #FFFFFF;
     cursor: pointer;
 }
+
+.hamburger-menu{
+    display: none;
+}
+
+
+/* Responsive starts here */
+
+@media screen and (max-width: 576px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    li,.nav-btn{
+        display:none;
+    }
+    .hamburger-menu{
+        display: flex;
+        cursor: pointer;
+    }
+    
+}
