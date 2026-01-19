@@ -77,12 +77,13 @@ hr{
 .hero-paragraph{
     color: #FFFFFF;
     margin-bottom: 24px;
+    opacity: 0.5;
 }
 .hero-container{
     position: relative;
     padding: 40px 20px;
     width: 100%;
-    background-image: url(/assets/hero-bg.png);
+    background-image: url(../assets/hero-bg.png);
     background-position: center;
     background-size: contain;
     display: flex;
@@ -151,12 +152,63 @@ hr{
     border-color: #00FF88; 
     color: #FFFFFF;
     cursor: pointer;
-    
 }
+
+.about-container{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.about-hr-line{
+    border: 1px solid dimgray;
+    margin-bottom: 80px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.about-container h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.about-container p{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    opacity: 0.5;
+    line-height: 20px;
+}
+
+.promo{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.promo-contents h3{
+    font-size: 3rem;
+    color: #00FF88;
+}
+.promo-contents p{
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+
+#why-choose{
+    background-color: #230E3D;
+}
+
 
 /* Responsive starts here */
 
 @media screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
     nav {
         justify-content: space-between;
     }
@@ -173,8 +225,6 @@ hr{
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 20px;
-        max-width: 920px; 
-
     }
     .hero-circle > img {
         padding-top: 50px ;
@@ -186,4 +236,26 @@ hr{
         top: 20%;
         left: 40%;
     }
+    .about-container p{
+        max-width: 360px;
+    }
+    .about-container h1{
+        font-size: 2rem;
+    }
+
+    .promo-contents h3{
+        font-size: 2.5rem;
+    }
+
+    .promo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        gap: 40px;
+        max-width: 360px;
+    }
+    .about-hr-line{
+        display: none;
+    }
+    
 }
