@@ -57,8 +57,8 @@ hr{
 }
 
 .nav-btn:hover{
-    background: transparent;
-    border-color: #FFFFFF; 
+    background: #6d00fc8c;
+    border-color: #6d00fc34;; 
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -200,9 +200,62 @@ hr{
 
 #why-choose{
     background-color: #230E3D;
+    padding-top: 80px;
+    padding-bottom: 120px;
 }
 
 
+.choose-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.card-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas: 
+    "card-1 card-2 card-2"
+    "card-1 card-3 card-3"
+    "card-4 card-4 card-5";
+}
+.choose-container h1{
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+
+}
+
+.card-1{
+    grid-area: card-1;
+    background-color: #35116550;
+    padding: 90px 40px;
+    border-radius: 30px;
+}
+.card-2{
+    grid-area: card-2;
+    background-color: #35116550;
+    padding: 40px;
+    border-radius: 30px;
+}
+.card-3{
+    grid-area: card-3;
+    background-color: #35116550;
+    padding: 40px;
+    border-radius: 30px;
+}
+.card-4{
+    grid-area: card-4;
+    background-color: #35116550;
+    padding: 40px;
+    border-radius: 30px;
+}
+.card-5{
+    grid-area: card-5;
+    background-color: #35116550;
+    padding: 40px;
+    border-radius: 30px;
+}
 /* Responsive starts here */
 
 @media screen and (max-width: 576px) {
@@ -257,5 +310,26 @@ hr{
     .about-hr-line{
         display: none;
     }
-    
+    .card-container{
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5";
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    #why-choose{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .choose-container{
+        padding: 20px; 
+        
+    }
+    .card-1{
+        padding: 40px; 
+    }
+
 }
