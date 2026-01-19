@@ -288,9 +288,34 @@ hr{
     font-weight: 600;
 
 }
+.host-contents{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+}
 
+.social-links{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
 
-
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(83, 60, 114, 1); 
+    border-radius: 50%;
+}
 /* Responsive starts here */
 
 @media screen and (max-width: 576px) {
@@ -369,4 +394,28 @@ hr{
         justify-content: center;
         align-items: center;
     } 
+    .host-contents {
+        flex-direction: column; 
+        text-align: center;     
+        padding: 40px 20px;
+        margin: 0 20px;       
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .social-links{
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .host-img img {
+        margin-bottom: 16px;
+    }
+    .host-container{
+        margin-bottom: 40px;
+    }
 }
