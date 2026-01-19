@@ -256,13 +256,49 @@ hr{
     padding: 40px;
     border-radius: 30px;
 }
+
+.featured-container{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 120px;
+}
+
+.fcard{
+    width: 350px;
+    height: 550px;
+    color: #FFFFFF; 
+    border-radius: 30px;                
+    background-color: #250D44;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.duration{
+    display: flex;
+    gap: 10px;
+    color: #00FF88;
+    font-weight: 600;
+
+}
+
+
+
 /* Responsive starts here */
 
 @media screen and (max-width: 576px) {
     body {
         overflow-x: hidden;
     }
-    nav {
+    
+    nav{
         justify-content: space-between;
     }
 
@@ -275,19 +311,18 @@ hr{
     }
 
     .hero-container{
-        background-size: cover;
+        background-position:top;
         background-repeat: no-repeat;
-        padding-top: 20px;
     }
     .hero-circle > img {
-        padding-top: 50px ;
-        max-width: 250px; 
+        margin-top: -30px;
+        max-width: 150px; 
         margin-bottom: 10px;
     }
     .mic {
-        max-width: 80px;
-        top: 20%;
-        left: 40%;
+        max-width: 50px;
+        top: 9%;
+        left: 44%;
     }
     .about-container p{
         max-width: 360px;
@@ -328,8 +363,10 @@ hr{
         padding: 20px; 
         
     }
-    .card-1{
-        padding: 40px; 
-    }
-
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
 }
