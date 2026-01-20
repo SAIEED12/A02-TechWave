@@ -413,7 +413,7 @@ hr{
     }
 
     .hero-container{
-        background-image: url(../assets/hero-bg-small.png); 
+        background-image: url('../assets/hero-bg-small.png'); 
     }
     .hero-btn-container{
         margin-bottom:0px;
@@ -510,7 +510,7 @@ hr{
 
     #footer{
         background-image: url('../assets/footer-small.png'); 
-        background-size: cover; 
+        background-size: contain; 
         background-position: center;
         background-repeat: no-repeat;
         padding: 60px 0; 
@@ -523,14 +523,16 @@ hr{
         display: flex;
         align-items: center;
         text-align: center;
-        gap: 25px;
+        gap: 20px;
     }
 
 
     .links{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px 
+        gap: 15px;
+        max-width: 280px;
+        margin: 0 auto;
     }
 
     .link-item{
@@ -539,6 +541,7 @@ hr{
         gap: 8px;
         color: white;
         font-size: 14px;
+        justify-content: flex-start;
     }
 
     .copyright{
