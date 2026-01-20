@@ -31,10 +31,14 @@ ul{
 li{
     list-style: none;
     font-weight: 500;
+    cursor: pointer;
 }
+li:hover{
+    color: #00FF88;
+}
+
 .nav-container{
     display: flex;
-
 }
 
 hr{
@@ -53,7 +57,7 @@ hr{
     background: linear-gradient(to right,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     color: #FFFFFF;
     font-weight: 600;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-btn:hover{
@@ -156,7 +160,7 @@ hr{
     background: linear-gradient(to right,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     color: #FFFFFF;
     font-weight: 600;
-    transition: ease-in .5s;
+    transition: all ease-in-out 0.3s;
 }
 
 .listen-btn:hover{
@@ -175,7 +179,7 @@ hr{
     background-color: transparent;
     border: 1px solid #00FF88;
     color: #00FF88;
-    transition: ease-in .5s;
+    transition: all ease-in-out 0.3s;
 }
 .subscriber-btn:hover{
     background: #00773e69;
@@ -411,9 +415,6 @@ hr{
     .hero-container{
         background-image: url(../assets/hero-bg-small.png); 
     }
-    .hero-heading{
-
-    }
     .hero-btn-container{
         margin-bottom:0px;
     }
@@ -477,6 +478,11 @@ hr{
         justify-content: center;
         align-items: center;
     } 
+
+    .fcard iframe {
+        width: 100%;
+    }
+
     .host-contents {
         flex-direction: column; 
         text-align: center;     
