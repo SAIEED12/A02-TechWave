@@ -510,12 +510,12 @@ hr{
 
     #footer{
         background-image: url('../assets/footer-small.png'); 
-        background-size: contain; 
-        background-position: center;
+        background-size: cover; 
         background-repeat: no-repeat;
-        padding: 60px 0; 
+        padding: 40px; 
         display: flex;
         justify-content: center;
+        padding: 20px 20px ;
     }
 
     .footer-container {
@@ -523,25 +523,22 @@ hr{
         display: flex;
         align-items: center;
         text-align: center;
-        gap: 20px;
     }
-
 
     .links{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-        max-width: 280px;
+        max-width: 250px;
         margin: 0 auto;
     }
 
     .link-item{
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 5px;
         color: white;
-        font-size: 14px;
-        justify-content: flex-start;
+        font-size: 12px;
     }
 
     .copyright{
