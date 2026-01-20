@@ -316,6 +316,49 @@ hr{
     border: 1px solid rgba(83, 60, 114, 1); 
     border-radius: 50%;
 }
+
+#footer {
+    background-image: url('../assets/footer-bg.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    color: #FFFFFF;
+}
+
+.link-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.copyright{
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
 /* Responsive starts here */
 
 @media screen and (max-width: 576px) {
@@ -336,24 +379,30 @@ hr{
     }
 
     .hero-container{
-        background-position:top;
-        background-repeat: no-repeat;
+        background-image: url(../assets/hero-bg-small.png); 
     }
+    .hero-heading{
+
+    }
+    .hero-btn-container{
+        margin-bottom:0px;
+    }
+
     .hero-circle > img {
-        margin-top: -30px;
-        max-width: 150px; 
-        margin-bottom: 10px;
+        top: 10px;
+        max-width: 180px; 
     }
     .mic {
-        max-width: 50px;
-        top: 9%;
-        left: 44%;
+        max-width: 45px;
+        top: 19%;
+        left: 45%;
     }
     .about-container p{
         max-width: 360px;
     }
     .about-container h1{
         font-size: 2rem;
+        margin-top: 40px;
     }
 
     .promo-contents h3{
@@ -379,6 +428,7 @@ hr{
         "card-5";
         grid-template-columns: 1fr;
         gap: 16px;
+        margin-bottom: 40px;
     }
     #why-choose{
         padding-top: 40px;
@@ -417,5 +467,44 @@ hr{
     }
     .host-container{
         margin-bottom: 40px;
+    }
+
+    #footer{
+        background-image: url('../assets/footer-small.png'); 
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px 0; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container {
+        max-width: 1600px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+
+    .links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px 
+    }
+
+    .link-item{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: white;
+        font-size: 14px;
+    }
+
+    .copyright{
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
