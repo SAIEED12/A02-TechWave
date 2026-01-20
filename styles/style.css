@@ -103,6 +103,21 @@ hr{
     max-width: 100%;
 }
 
+
+.new{
+    position: absolute;
+    top: 3%; 
+    right: 12%;
+    background: rgba(0, 255, 136, 1);
+    color: black; 
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+}
+
+
 .mic{
     display: flex;
     position: absolute;
@@ -110,7 +125,22 @@ hr{
     align-items: center;
     top: 17%;
     left: 47%;
+    animation: flip 3s ease-in-out infinite;
 }
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg); 
+    }
+    100% {
+        transform: rotateY(360deg); 
+    }
+}
+
+
 .hero-btn-container{
     display: flex;
     gap: 8px;
@@ -396,6 +426,9 @@ hr{
         max-width: 45px;
         top: 19%;
         left: 45%;
+    }
+    .new{
+        right: 3%;
     }
     .about-container p{
         max-width: 360px;
